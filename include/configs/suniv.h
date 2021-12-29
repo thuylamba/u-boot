@@ -13,6 +13,4 @@
  * Include common sunxi configuration where most the settings are
  */
 #include <configs/sunxi-common.h>
-#undef CONFIG_CONS_INDEX
-#define CONFIG_CONS_INDEX       2  //UART1
 #endif /* __CONFIG_H */
