@@ -7,7 +7,7 @@ CONFIG_DRAM_ZQ=0
 CONFIG_DEFAULT_DEVICE_TREE="suniv-f1c100s-licheepi-nano"
 CONFIG_BOOTDELAY=0
 CONFIG_USE_BOOTARGS=y
-CONFIG_BOOTARGS="console=tty1 console=ttyS1,115200 panic=5 rootwait root=/dev/mtdblock3 rw rootfstype=jffs2"
+CONFIG_BOOTARGS="console=tty0 console=ttyS0,115200 panic=5 rootwait root=/dev/mtdblock3 rw rootfstype=jffs2"
 CONFIG_BOOTCOMMAND="sf probe 0 0x6000000; sf read 0x80C00000 0x100000 0x10000; sf read 0x80008000 0x110000 0x4F0000; bootz 0x80008000 - 0x80C00000;"
 CONFIG_SPL=y
 CONFIG_CMD_SF=y
